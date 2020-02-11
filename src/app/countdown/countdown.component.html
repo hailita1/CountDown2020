@@ -1,0 +1,10 @@
+<h1 style="color: red">Ứng dụng đếm ngược thời gian !!!</h1>
+<div>
+  <p>Nhập vào thời gian cần đế ngược:
+    <input *ngIf="isStart" type="number" [value]="second" (change)="onChange($event.target.value)">
+  </p>
+  <p>Bắt đầu đếm ngược: {{remainingTime}} (s)</p>
+  <button (click)="start()" value="Start">Start</button>
+  <button (click)="stop()" value="Stop">Stop</button>
+  <button (click)="reset()" value="Restart">Restart</button>
+</div>
